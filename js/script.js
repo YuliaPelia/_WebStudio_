@@ -109,3 +109,4 @@ function openByScroll(selector) {
 }
 
 bindModal(".promo-btn", ".modal", ".modal .modal_close");
+new WOW().init();
