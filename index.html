@@ -6,7 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Web Studio</title>
     <link rel="icon" type="images/x-icon" href="./img/Favicon.ico.svg" />
-    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -17,6 +20,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
     />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <!-- header + nav -->
@@ -51,9 +55,9 @@
 
     <main>
       <!-- header -->
-      <section class="header">
+      <section class="promo">
         <h1>Ефективні рішення для<br />вашого бізнесу</h1>
-        <button class="blue-btn">Замовити послугу</button>
+        <button class="promo-btn">Замовити послугу</button>
       </section>
 
       <!-- features -->
@@ -129,16 +133,71 @@
       </section>
     </main>
     <footer>
-      <a href="#" class="logo-footer"
-        ><h2><span class="logo-blue">Web</span>Studio</h2></a
-      >
-      <address>
-        <a href="#" class="adress">м. Київ, пр-т Лесі Українки, 26</a>
-        <a href="mailto:info@example.com" class="footer-contact"
-          >info@example.com</a
+      <div class="container">
+        <a href="#" class="logo-footer"
+          ><h2><span class="logo-blue">Web</span>Studio</h2></a
         >
-        <a href="tel:+380991111111" class="footer-contact">+38 099 111 11 11</a>
-      </address>
+        <address>
+          <a href="#" class="adress">м. Київ, пр-т Лесі Українки, 26</a>
+          <a href="mailto:info@example.com" class="footer-contact"
+            >info@example.com</a
+          >
+          <a href="tel:+380991111111" class="footer-contact"
+            >+38 099 111 11 11</a
+          >
+        </address>
+      </div>
     </footer>
+    <div class="modal" data-modal>
+      <div class="modal__content">
+        <div class="modal_close">
+          <span>&times;</span>
+        </div>
+        <h3 class="modal_title">Залиште свої дані, ми вам передзвонимо</h3>
+        <form action="#">
+          <div class="modal_form">
+            <span>Ім'я</span>
+            <input required name="name" type="text" class="modal__input name" />
+          </div>
+          <div class="modal_form">
+            <span>Телефон</span>
+            <input
+              required
+              name="phone"
+              type="tel"
+              class="modal__input phone"
+            />
+          </div>
+          <div class="modal_form">
+            <span>Пошта</span>
+            <input
+              required
+              name="phone"
+              type="email"
+              class="modal__input email"
+            />
+          </div>
+          <div class="modal_form textarea">
+            <span>Коментар</span>
+            <textarea
+              required
+              name="email"
+              type="email"
+              placeholder="Введіть текст"
+              class="modal__textarea comment"
+            ></textarea>
+          </div>
+          <div class="modal_policy">
+            <input required type="checkbox" />
+            <span
+              >Погоджуюся з розсилкою та приймаю
+              <a href="#">Умови договору</a></span
+            >
+          </div>
+          <button class="modal_btn">Відправити</button>
+        </form>
+      </div>
+    </div>
+    <script src="./js/script.js"></script>
   </body>
 </html>
