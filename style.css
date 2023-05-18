@@ -2,7 +2,7 @@
 font-family: 'Roboto', sans-serif;
 400 500 700 900
 */
-@import './node_modules/animate.css/animate.min.css';
+/* @import './node_modules/animate.css/animate.min.css'; */
 
 body {
     font-family: 'Roboto', sans-serif;
@@ -12,7 +12,17 @@ button {
     cursor: pointer;
 }
 
+
 /* header */
+
+header {
+    position: fixed;
+    background: #ffff;
+    width: 100%;
+    z-index: 50;
+    top: 0;
+}
+
 .logo-header>h2 {
     font-family: 'Raleway', sans-serif;
     font-size: 26px;
@@ -67,9 +77,13 @@ a:hover {
 }
 
 /* header main */
+main {
+    margin-top: 75px;
+}
+
 .promo {
     background: url(./img/promo_img.png) center/cover no-repeat;
-
+    animation: slideInUp;
     /* referring directly to the animation's @keyframe declaration */
     animation-duration: 2s;
 }
@@ -120,7 +134,6 @@ hr {
 }
 
 .header-block {
-    width: 1170px;
     display: flex;
     justify-content: space-between;
     align-items: center;
