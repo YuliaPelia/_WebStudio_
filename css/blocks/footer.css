@@ -1,0 +1,42 @@
+footer {
+    background-color: #2F303A;
+    padding: 60px 0;
+
+}
+
+.footer_block {
+    display: flex;
+    align-items: center;
+    gap: 70px;
+}
+
+.logo-footer {
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-size: 26px;
+}
+
+.adress {
+    color: white;
+    font-style: normal;
+}
+
+.footer_social {
+    margin-top: 20px;
+}
+
+.footer_social a {
+    background: rgba(255, 255, 255, 0.1);
+    color: #ffff;
+}
+
+.footer_about h3 {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin: 0;
+    color: #FFFFFF;
+
+}

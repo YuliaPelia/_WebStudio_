@@ -1,0 +1,39 @@
+.customers {
+    padding: 94px 0;
+}
+
+
+.customers_list {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.customers_item {
+    list-style: none;
+
+}
+
+.customers_item a {
+    display: block;
+    position: relative;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    width: 170px;
+    height: 92px;
+}
+
+.customers_item svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.customers_item a:hover {
+    border-color: #2196F3;
+}
+
+.customers_item a:hover path {
+    fill: #2196F3;
+}
