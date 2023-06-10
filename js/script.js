@@ -10,6 +10,7 @@ function bindModal(
     modal = document.querySelector(modalSelector),
     close = document.querySelector(closeSelector),
     windows = document.querySelectorAll("[data-modal]"),
+    header = document.querySelector(".header"),
     scroll = calcScroll();
 
   trigger.forEach((item) => {
@@ -28,7 +29,7 @@ function bindModal(
         item.style.display = "none";
         item.classList.add("animate__animated", "animate__fadeIn");
       });
-
+      header.style.overflowY = "scroll";
       modal.style.display = "block";
       document.body.style.overflow = "hidden";
       document.body.style.marginRight = `${scroll}px`;
@@ -39,7 +40,7 @@ function bindModal(
     windows.forEach((item) => {
       item.style.display = "none";
     });
-
+    header.style.overflowY = "";
     modal.style.display = "none";
     document.body.style.overflow = "";
     document.body.style.marginRight = `0px`;
@@ -50,7 +51,7 @@ function bindModal(
       windows.forEach((item) => {
         item.style.display = "none";
       });
-
+      header.style.overflowY = "";
       modal.style.display = "none";
       document.body.style.overflow = "";
       document.body.style.marginRight = `0px`;

@@ -1,4 +1,4 @@
-header {
+.header {
     position: fixed;
     background: #ffff;
     width: 100%;
@@ -124,4 +124,8 @@ nav ul {
 .header-link i {
     margin-right: 5px;
 
+}
+
+.header-link a:hover {
+    color: #2196F3;
 }
