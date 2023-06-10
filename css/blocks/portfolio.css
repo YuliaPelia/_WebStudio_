@@ -1,0 +1,157 @@
+/* portfolio */
+
+.filter {
+    padding: 94px 0 34px 0;
+}
+
+.filter_btns {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+
+.filter_btns button {
+    transition: 0.2s;
+    padding: 6px 22px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    border: none;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: #212121;
+    background: #F5F4FA;
+    border-radius: 4px;
+}
+
+.filter_btns button:hover {
+    background: #2196F3;
+    /* shadow-middle */
+
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+        0px 1px 2px rgba(0, 0, 0, 0.08),
+        0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+    color: #FFFFFF;
+}
+
+.cards_list>li {
+    transition: 0.5s all;
+    background: #FFFFFF;
+    border: 1px solid #EEEEEE;
+    width: 370px;
+    position: relative;
+
+}
+
+.cards_list>li:hover {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+        0px 4px 4px rgba(0, 0, 0, 0.06),
+        1px 4px 6px rgba(0, 0, 0, 0.16);
+    cursor: pointer;
+
+}
+
+.cards_list>li:hover .card_overlay {
+    opacity: 1;
+    animation: flipInY 2s;
+}
+
+.cards_list>li .card_img {
+    width: 100%;
+    height: 294px;
+
+}
+
+.cards_list>li .card_img>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card_descr {
+    margin: 20px 24px;
+}
+
+.card_descr>h3 {
+    margin: 0;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 36px;
+
+    letter-spacing: 0.06em;
+
+    color: #212121;
+}
+
+.card_descr>h4 {
+    margin: 0;
+    margin-top: 6px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+
+    letter-spacing: 0.03em;
+
+    color: #757575;
+}
+
+.cards_list {
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 20px;
+}
+
+.cards {
+    padding-bottom: 94px;
+}
+
+
+
+.card_overlay {
+    opacity: 0;
+    margin: 0;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0.03em;
+    transition: 0.5s;
+    color: #FFFFFF;
+    position: absolute;
+    box-sizing: border-box;
+    padding: 63px 24px;
+    height: 294px;
+    width: 100%;
+    background: rgba(33, 150, 243, 0.9);
+    top: 0;
+}
+
+/* .card_block {
+    position: relative;
+    width: 100%;
+}
+
+.card_overlay p {
+    margin: 0;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0.03em;
+
+    color: #FFFFFF;
+}
+
+.card_overlay {
+    display: none;
+    position: absolute;
+    box-sizing: border-box;
+    padding: 63px 24px;
+    height: 100%;
+    width: 100%;
+    background: rgba(33, 150, 243, 0.9);
+    top: 0;
+    transition: 0.5s;
+} */
